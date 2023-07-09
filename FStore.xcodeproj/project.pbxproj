@@ -15,6 +15,7 @@
 		B11E2CBB2A5AC7A30039D77B /* KeyType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11E2CBA2A5AC7A30039D77B /* KeyType.swift */; };
 		B11E2CBE2A5AC8F00039D77B /* CacheTransaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11E2CBD2A5AC8F00039D77B /* CacheTransaction.swift */; };
 		B11E2CC02A5AC9400039D77B /* CacheSupportedType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11E2CBF2A5AC9400039D77B /* CacheSupportedType.swift */; };
+		B11E2CC42A5ACAA40039D77B /* CacheConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11E2CC32A5ACAA40039D77B /* CacheConvertible.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		B11E2CBA2A5AC7A30039D77B /* KeyType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyType.swift; sourceTree = "<group>"; };
 		B11E2CBD2A5AC8F00039D77B /* CacheTransaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheTransaction.swift; sourceTree = "<group>"; };
 		B11E2CBF2A5AC9400039D77B /* CacheSupportedType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheSupportedType.swift; sourceTree = "<group>"; };
+		B11E2CC32A5ACAA40039D77B /* CacheConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheConvertible.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 			children = (
 				B11E2CBD2A5AC8F00039D77B /* CacheTransaction.swift */,
 				B11E2CBF2A5AC9400039D77B /* CacheSupportedType.swift */,
+				B11E2CC32A5ACAA40039D77B /* CacheConvertible.swift */,
 			);
 			path = Cache;
 			sourceTree = "<group>";
@@ -169,6 +172,7 @@
 			files = (
 				B11E2CB52A5AC6460039D77B /* Nullable.swift in Sources */,
 				B11E2CB32A5AC5D90039D77B /* Store.swift in Sources */,
+				B11E2CC42A5ACAA40039D77B /* CacheConvertible.swift in Sources */,
 				B11E2CB72A5AC6BD0039D77B /* Key.swift in Sources */,
 				B11E2CC02A5AC9400039D77B /* CacheSupportedType.swift in Sources */,
 				B11E2CBE2A5AC8F00039D77B /* CacheTransaction.swift in Sources */,
