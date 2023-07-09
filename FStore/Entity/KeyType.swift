@@ -8,6 +8,7 @@
 import Foundation
 
 public protocol KeyType {
+    
     associatedtype NamespaceType: Namespace
     associatedtype ValueType
     
@@ -15,19 +16,13 @@ public protocol KeyType {
     var defaultValue: ValueType { get }
     
     func willChange(_ oldValue: ValueType, newValue: ValueType)
-    
-    func processChange(_ oldValue: ValueType, newValue: ValueType) -> ValueType {
-        return newValue
-    }
-    
+    func processChange(_ oldValue: ValueType, newValue: ValueType) -> ValueType
     func didChange(_ oldValue: ValueType, newValue: ValueType)
 }
 
 public extension KeyType {
-    func willChange(_ oldValue: ValueType, newValue: ValueType) {}
-    func processChange(_ oldValue: ValueType, newValue: ValueType) -> ValueType {
-        return newValue
-    }
     
+    func willChange(_ oldValue: ValueType, newValue: ValueType) {}
+    func processChange(_ oldValue: ValueType, newValue: ValueType) -> ValueType { return newValue }
     func didChange(_ oldValue: ValueType, newValue: ValueType) {}
 }
