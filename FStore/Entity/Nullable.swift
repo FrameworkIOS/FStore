@@ -9,17 +9,16 @@ import Foundation
 
 public protocol Nullable {
     associatedtype UnderlyingType
-    var wrappedValue: UnderlyingType? {
-        get
-    }
     
-    init(_some: UnderlyingType)
+    var wrappedValue: UnderlyingType? { get }
+    
+    init(_ some: UnderlyingType)
 }
 
 extension Optional: Nullable {
     public typealias UnderlyingType = Wrapped
     
-    public var wrappedValue: UnderlyingType {
+    public var wrappedValue: UnderlyingType? {
         return map { $0 }
     }
 }
