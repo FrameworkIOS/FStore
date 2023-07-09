@@ -7,10 +7,14 @@
 
 import Foundation
 
+// KEY
 public struct Key<G: Namespace, V>: KeyType {
+    
     public typealias NamespaceType = G
     public typealias ValueType = V
+    
     public typealias ChangeBlock = (ValueType) -> (ValueType)
+    
     
     public var id: String
     public var defaultValue: ValueType
@@ -24,5 +28,9 @@ public struct Key<G: Namespace, V>: KeyType {
         self.id = id
         self.defaultValue = defaultValue
         self.changeBlock = changeBlock
+    }
+    
+    public func processChange(_ oldValue: ValueType, newValue: ValueType) -> ValueType {
+        return changeBlock?(newValue) ?? newValue
     }
 }
