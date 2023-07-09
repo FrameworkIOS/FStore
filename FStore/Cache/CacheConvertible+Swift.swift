@@ -7,10 +7,12 @@
 
 import Foundation
 
+// INT
 extension Int: CacheConvertible {
+    
     public typealias CacheType = AnyObject
     
-    public static func decode(cacheValue value: AnyObject) -> Int? {
+    public static func decode(cacheValue value: CacheType) -> Int? {
         return value as? Int
     }
     
@@ -19,39 +21,58 @@ extension Int: CacheConvertible {
     }
 }
 
+// DOUBLE
 extension Double: CacheConvertible {
+    
     public typealias CacheType = AnyObject
     
-    public static func decode(cacheValue value: AnyObject) -> Double? {
+    public static func decode(cacheValue value: CacheType) -> Double? {
         return value as? Double
     }
     
-    public var encodeForCache: AnyObject? {
+    public var encodeForCache: CacheType? {
         return self as AnyObject
     }
 }
 
+// BOOl
 extension Bool: CacheConvertible {
+    
     public typealias CacheType = AnyObject
     
-    public static func decode(cacheValue value: AnyObject) -> Bool? {
+    public static func decode(cacheValue value: CacheType) -> Bool? {
         return value as? Bool
     }
     
-    public var encodeForCache: AnyObject? {
+    public var encodeForCache: CacheType? {
         return self as AnyObject
     }
 }
 
-
-extension String: CacheConvertible {
+// FLOAt
+extension Float: CacheConvertible {
+    
     public typealias CacheType = AnyObject
     
-    public static func decode(cacheValue value: AnyObject) -> String? {
-        return value as String?
+    public static func decode(cacheValue value: CacheType) -> Float? {
+        return value as? Float
     }
     
-    public var encodeForCache: AnyObject? {r
-        return value as AnyObject?
+    public var encodeForCache: CacheType? {
+        return self as AnyObject
+    }
+}
+
+// STRING
+extension String: CacheConvertible {
+    
+    public typealias CacheType = AnyObject
+    
+    public static func decode(cacheValue value: CacheType) -> String? {
+        return value as? String
+    }
+    
+    public var encodeForCache: CacheType? {
+        return self as AnyObject
     }
 }
