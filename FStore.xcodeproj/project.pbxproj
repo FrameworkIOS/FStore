@@ -13,6 +13,8 @@
 		B11E2CB72A5AC6BD0039D77B /* Key.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11E2CB62A5AC6BD0039D77B /* Key.swift */; };
 		B11E2CB92A5AC6D80039D77B /* Namespace.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11E2CB82A5AC6D80039D77B /* Namespace.swift */; };
 		B11E2CBB2A5AC7A30039D77B /* KeyType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11E2CBA2A5AC7A30039D77B /* KeyType.swift */; };
+		B11E2CBE2A5AC8F00039D77B /* CacheTransaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11E2CBD2A5AC8F00039D77B /* CacheTransaction.swift */; };
+		B11E2CC02A5AC9400039D77B /* CacheSupportedType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11E2CBF2A5AC9400039D77B /* CacheSupportedType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,8 @@
 		B11E2CB62A5AC6BD0039D77B /* Key.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Key.swift; sourceTree = "<group>"; };
 		B11E2CB82A5AC6D80039D77B /* Namespace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Namespace.swift; sourceTree = "<group>"; };
 		B11E2CBA2A5AC7A30039D77B /* KeyType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyType.swift; sourceTree = "<group>"; };
+		B11E2CBD2A5AC8F00039D77B /* CacheTransaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheTransaction.swift; sourceTree = "<group>"; };
+		B11E2CBF2A5AC9400039D77B /* CacheSupportedType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheSupportedType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +59,7 @@
 		B11E2CA92A5AC5A80039D77B /* FStore */ = {
 			isa = PBXGroup;
 			children = (
+				B11E2CBC2A5AC8E70039D77B /* Cache */,
 				B11E2CB12A5AC5CC0039D77B /* Entity */,
 				B11E2CAA2A5AC5A80039D77B /* FStore.h */,
 			);
@@ -71,6 +76,15 @@
 				B11E2CBA2A5AC7A30039D77B /* KeyType.swift */,
 			);
 			path = Entity;
+			sourceTree = "<group>";
+		};
+		B11E2CBC2A5AC8E70039D77B /* Cache */ = {
+			isa = PBXGroup;
+			children = (
+				B11E2CBD2A5AC8F00039D77B /* CacheTransaction.swift */,
+				B11E2CBF2A5AC9400039D77B /* CacheSupportedType.swift */,
+			);
+			path = Cache;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -156,6 +170,8 @@
 				B11E2CB52A5AC6460039D77B /* Nullable.swift in Sources */,
 				B11E2CB32A5AC5D90039D77B /* Store.swift in Sources */,
 				B11E2CB72A5AC6BD0039D77B /* Key.swift in Sources */,
+				B11E2CC02A5AC9400039D77B /* CacheSupportedType.swift in Sources */,
+				B11E2CBE2A5AC8F00039D77B /* CacheTransaction.swift in Sources */,
 				B11E2CB92A5AC6D80039D77B /* Namespace.swift in Sources */,
 				B11E2CBB2A5AC7A30039D77B /* KeyType.swift in Sources */,
 			);
