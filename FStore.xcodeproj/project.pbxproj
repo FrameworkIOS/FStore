@@ -17,6 +17,7 @@
 		B11E2CC02A5AC9400039D77B /* CacheSupportedType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11E2CBF2A5AC9400039D77B /* CacheSupportedType.swift */; };
 		B11E2CC42A5ACAA40039D77B /* CacheConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11E2CC32A5ACAA40039D77B /* CacheConvertible.swift */; };
 		B11E2CC62A5ACB8F0039D77B /* CacheConvertible+Swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11E2CC52A5ACB8F0039D77B /* CacheConvertible+Swift.swift */; };
+		B11E2CC82A5ACF410039D77B /* CacheStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11E2CC72A5ACF410039D77B /* CacheStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		B11E2CBF2A5AC9400039D77B /* CacheSupportedType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheSupportedType.swift; sourceTree = "<group>"; };
 		B11E2CC32A5ACAA40039D77B /* CacheConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheConvertible.swift; sourceTree = "<group>"; };
 		B11E2CC52A5ACB8F0039D77B /* CacheConvertible+Swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CacheConvertible+Swift.swift"; sourceTree = "<group>"; };
+		B11E2CC72A5ACF410039D77B /* CacheStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 				B11E2CBF2A5AC9400039D77B /* CacheSupportedType.swift */,
 				B11E2CC32A5ACAA40039D77B /* CacheConvertible.swift */,
 				B11E2CC52A5ACB8F0039D77B /* CacheConvertible+Swift.swift */,
+				B11E2CC72A5ACF410039D77B /* CacheStore.swift */,
 			);
 			path = Cache;
 			sourceTree = "<group>";
@@ -181,6 +184,7 @@
 				B11E2CC02A5AC9400039D77B /* CacheSupportedType.swift in Sources */,
 				B11E2CBE2A5AC8F00039D77B /* CacheTransaction.swift in Sources */,
 				B11E2CB92A5AC6D80039D77B /* Namespace.swift in Sources */,
+				B11E2CC82A5ACF410039D77B /* CacheStore.swift in Sources */,
 				B11E2CBB2A5AC7A30039D77B /* KeyType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
