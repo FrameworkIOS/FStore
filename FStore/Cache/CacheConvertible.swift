@@ -46,7 +46,7 @@ struct CacheNullableConvertibleBox <T: Nullable>: CacheTransaction where T.Under
     let value: T
     
     var supportedType: AnyObject? {
-        return value.wrappedValue?.encodeForCaches
+        return value.wrappedValue?.encodeForCache
     }
     
     init?(storedValue: AnyObject?) {

@@ -21,6 +21,8 @@
 		B11E2CCB2A5AD0B80039D77B /* UserDefaultTransaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11E2CCA2A5AD0B80039D77B /* UserDefaultTransaction.swift */; };
 		B11E2CCD2A5AD0EB0039D77B /* UserDefaultsSupportedType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11E2CCC2A5AD0EB0039D77B /* UserDefaultsSupportedType.swift */; };
 		B11E2CCF2A5AD1D80039D77B /* UserDefaultsConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11E2CCE2A5AD1D80039D77B /* UserDefaultsConvertible.swift */; };
+		B11E2CD12A5AD4290039D77B /* UserDefaultsConvertible+Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11E2CD02A5AD4290039D77B /* UserDefaultsConvertible+Foundation.swift */; };
+		B11E2CD32A5AD48F0039D77B /* UserDefaultsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11E2CD22A5AD48F0039D77B /* UserDefaultsStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +41,8 @@
 		B11E2CCA2A5AD0B80039D77B /* UserDefaultTransaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultTransaction.swift; sourceTree = "<group>"; };
 		B11E2CCC2A5AD0EB0039D77B /* UserDefaultsSupportedType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsSupportedType.swift; sourceTree = "<group>"; };
 		B11E2CCE2A5AD1D80039D77B /* UserDefaultsConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsConvertible.swift; sourceTree = "<group>"; };
+		B11E2CD02A5AD4290039D77B /* UserDefaultsConvertible+Foundation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaultsConvertible+Foundation.swift"; sourceTree = "<group>"; };
+		B11E2CD22A5AD48F0039D77B /* UserDefaultsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +113,8 @@
 				B11E2CCA2A5AD0B80039D77B /* UserDefaultTransaction.swift */,
 				B11E2CCC2A5AD0EB0039D77B /* UserDefaultsSupportedType.swift */,
 				B11E2CCE2A5AD1D80039D77B /* UserDefaultsConvertible.swift */,
+				B11E2CD02A5AD4290039D77B /* UserDefaultsConvertible+Foundation.swift */,
+				B11E2CD22A5AD48F0039D77B /* UserDefaultsStore.swift */,
 			);
 			path = UserDefaults;
 			sourceTree = "<group>";
@@ -194,6 +200,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B11E2CB52A5AC6460039D77B /* Nullable.swift in Sources */,
+				B11E2CD12A5AD4290039D77B /* UserDefaultsConvertible+Foundation.swift in Sources */,
 				B11E2CCD2A5AD0EB0039D77B /* UserDefaultsSupportedType.swift in Sources */,
 				B11E2CC62A5ACB8F0039D77B /* CacheConvertible+Swift.swift in Sources */,
 				B11E2CB32A5AC5D90039D77B /* Store.swift in Sources */,
@@ -203,6 +210,7 @@
 				B11E2CC02A5AC9400039D77B /* CacheSupportedType.swift in Sources */,
 				B11E2CBE2A5AC8F00039D77B /* CacheTransaction.swift in Sources */,
 				B11E2CB92A5AC6D80039D77B /* Namespace.swift in Sources */,
+				B11E2CD32A5AD48F0039D77B /* UserDefaultsStore.swift in Sources */,
 				B11E2CC82A5ACF410039D77B /* CacheStore.swift in Sources */,
 				B11E2CCB2A5AD0B80039D77B /* UserDefaultTransaction.swift in Sources */,
 				B11E2CBB2A5AC7A30039D77B /* KeyType.swift in Sources */,
