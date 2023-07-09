@@ -9,18 +9,19 @@ import Foundation
 
 public typealias CacheSupportedType = AnyObject
 
-struct CacheSupportedBox<T: CacheSupportedType>: CacheTransaction {
+
+struct CacheSupportedBox <T: CacheSupportedType>: CacheTransaction {
     let value: T
+    
     var supportedType: AnyObject? {
         let anyObject: AnyObject? = value
         return anyObject
     }
     
-    init?(storedValue: AnyObject?){
+    init?(storedValue: AnyObject?) {
         guard let value = storedValue as? T else {
             return nil
         }
-        
         self.value = value
     }
     
@@ -28,6 +29,7 @@ struct CacheSupportedBox<T: CacheSupportedType>: CacheTransaction {
         self.value = value
     }
 }
+
 
 struct CacheNullableSupportedBox<T: Nullable>: CacheTransaction where T.UnderlyingType: CacheSupportedType {
     let value: T
@@ -38,9 +40,12 @@ struct CacheNullableSupportedBox<T: Nullable>: CacheTransaction where T.Underlyi
     
     init?(storedValue: AnyObject?) {
         guard let value = storedValue as? T.UnderlyingType else {
-            return nil
+                return nil
         }
-        
         self.value = T(value)
+    }
+    
+    init(_ value: T) {
+        self.value = value
     }
 }
