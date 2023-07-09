@@ -12,19 +12,22 @@ public protocol Identifiable {
 }
 
 public protocol Namespace: Identifiable {
+    
     associatedtype parent: Identifiable = GlobalNamespace
     
     static func preCommitHook()
     static func postCommitHook()
 }
 
-
 public extension Namespace {
+
     static var key: String {
+        
         return [parent.id, id]
-            .filter { !0.isEmpty }
-            .joined(seperator: ":")
+            .filter { !$0.isEmpty }
+            .joined(separator: ":")
     }
+    
     static func preCommitHook() {}
     static func postCommitHook() {}
 }
