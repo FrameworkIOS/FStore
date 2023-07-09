@@ -10,6 +10,8 @@
 		B11E2CAB2A5AC5A80039D77B /* FStore.h in Headers */ = {isa = PBXBuildFile; fileRef = B11E2CAA2A5AC5A80039D77B /* FStore.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B11E2CB32A5AC5D90039D77B /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11E2CB22A5AC5D90039D77B /* Store.swift */; };
 		B11E2CB52A5AC6460039D77B /* Nullable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11E2CB42A5AC6460039D77B /* Nullable.swift */; };
+		B11E2CB72A5AC6BD0039D77B /* Key.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11E2CB62A5AC6BD0039D77B /* Key.swift */; };
+		B11E2CB92A5AC6D80039D77B /* Namespace.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11E2CB82A5AC6D80039D77B /* Namespace.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -17,6 +19,8 @@
 		B11E2CAA2A5AC5A80039D77B /* FStore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FStore.h; sourceTree = "<group>"; };
 		B11E2CB22A5AC5D90039D77B /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
 		B11E2CB42A5AC6460039D77B /* Nullable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nullable.swift; sourceTree = "<group>"; };
+		B11E2CB62A5AC6BD0039D77B /* Key.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Key.swift; sourceTree = "<group>"; };
+		B11E2CB82A5AC6D80039D77B /* Namespace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Namespace.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 			children = (
 				B11E2CB22A5AC5D90039D77B /* Store.swift */,
 				B11E2CB42A5AC6460039D77B /* Nullable.swift */,
+				B11E2CB62A5AC6BD0039D77B /* Key.swift */,
+				B11E2CB82A5AC6D80039D77B /* Namespace.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -146,6 +152,8 @@
 			files = (
 				B11E2CB52A5AC6460039D77B /* Nullable.swift in Sources */,
 				B11E2CB32A5AC5D90039D77B /* Store.swift in Sources */,
+				B11E2CB72A5AC6BD0039D77B /* Key.swift in Sources */,
+				B11E2CB92A5AC6D80039D77B /* Namespace.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
